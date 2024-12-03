@@ -1,4 +1,5 @@
-﻿$array = (Get-SecureBootUEFI -Name db).bytes
+﻿Set-Location -Path $PSScriptRoot
+$array = (Get-SecureBootUEFI -Name db).bytes
 $count = $array.Count
 $chunks = @()
 $startIndex = 0
