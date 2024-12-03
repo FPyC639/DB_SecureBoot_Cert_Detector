@@ -31,7 +31,6 @@
             button1 = new Button();
             PCA2011 = new Label();
             CA20101 = new Label();
-            detailsTextBox = new Label();
             SuspendLayout();
             // 
             // button1
@@ -62,21 +61,11 @@
             CA20101.TabIndex = 2;
             CA20101.Text = "Temp2";
             // 
-            // detailsTextBox
-            // 
-            detailsTextBox.AutoSize = true;
-            detailsTextBox.Location = new Point(365, 242);
-            detailsTextBox.Name = "detailsTextBox";
-            detailsTextBox.Size = new Size(50, 20);
-            detailsTextBox.TabIndex = 3;
-            detailsTextBox.Text = "label1";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(detailsTextBox);
             Controls.Add(CA20101);
             Controls.Add(PCA2011);
             Controls.Add(button1);
@@ -91,6 +80,5 @@
         private Button button1;
         private Label PCA2011;
         private Label CA20101;
-        private Label detailsTextBox;
     }
 }
