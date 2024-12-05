@@ -10,6 +10,16 @@ The application currently checks the following information:
 
 It displays the the information in the Graphical User Interface (GUI).
 
+# Update December 5th, 2024
+
+I adjusted the graphical User Interface to not have an overlap between the certifactes,
+additionally I included support for:
+
+    3. Microsoft Corporation UEFI CA 2011 
+
+GUI Appearance:
+    ![GUI Appearance](CertsImage.png)
+
 
 ## Acknowledgements
 
