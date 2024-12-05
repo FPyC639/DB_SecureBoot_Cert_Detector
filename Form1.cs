@@ -45,16 +45,23 @@ namespace WindowsMicrosoftHashingDB
                                 //Debug.WriteLine(s);
 
                                 string sb1 = sb.ToString();
-                                if (sb1.Contains("Microsoft Windows Production PCA 2011"))
+                                if (sb1.Contains("Microsoft Windows Production PCA 2011") && sb1.Contains("Microsoft Root Certificate Authority 2010"))
+                                {
                                     PCA2011.Text = "Microsoft Windows Production PCA 2011";
-                                if (sb1.Contains("Microsoft Corporation UEFI CA 2011"))
-                                    PCA2011.Text = "Microsoft Corporation UEFI CA 2011";
-                                if (sb1.Contains("Microsoft Root Certificate Authority 2010"))
                                     CA20101.Text = "Microsoft Root Certificate Authority 2010";
-                                if (sb1.Contains("Microsoft Corporation Third Party Marketplace Root"))
-                                    CA20101.Text = "Microsoft Corporation Third Party Marketplace Root";
-                                if (sb1.Contains("Windows UEFI CA 2023"))
-                                    PCA2011.Text = "Windows UEFI CA 2023";
+                                }
+                                if (sb1.Contains("Microsoft Corporation UEFI CA 2011") && sb1.Contains("Microsoft Corporation Third Party Marketplace Root"))
+                                {
+                                    CA2011.Text = "Microsoft Corporation UEFI CA 2011";
+                                    CA201102.Text = "Microsoft Corporation Third Party Marketplace Root";
+                                }
+                                if (sb1.Contains("Windows UEFI CA 2023") && sb1.Contains("Microsoft Root Certificate Authority 2010"))
+                                {
+                                    CA2023.Text = "Windows UEFI CA 2023";
+                                    CA20102.Text = "Microsoft Root Certificate Authority 2010";
+                                }
+
+
                             }
 
                         }
