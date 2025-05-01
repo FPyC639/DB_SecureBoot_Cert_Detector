@@ -20,6 +20,13 @@ additionally I included support for:
 GUI Appearance:
     ![GUI Appearance](CertsImage.png)
 
+# Update April 30th 2025
+
+I adjusted the graphical User Interface to be more clearer for the DB values and Cert Authorities.
+
+GUI Appearance:
+    ![Gui Appearance 2](CertsImageV2.png)
+
 
 ## Acknowledgements
 
