@@ -43,28 +43,27 @@ namespace WindowsMicrosoftHashingDB
                                     //Debug.WriteLine(Convert.ToChar(number));
                                 }
                                 //Debug.WriteLine(s);
-
-                                string sb1 = sb.ToString();
-                                if (sb1.Contains("Microsoft Windows Production PCA 2011") && sb1.Contains("Microsoft Root Certificate Authority 2010"))
-                                {
-                                    PCA2011.Text = "Microsoft Windows Production PCA 2011";
-                                    CA20101.Text = "Microsoft Root Certificate Authority 2010";
-                                }
-                                if (sb1.Contains("Microsoft Corporation UEFI CA 2011") && sb1.Contains("Microsoft Corporation Third Party Marketplace Root"))
-                                {
-                                    CA2011.Text = "Microsoft Corporation UEFI CA 2011";
-                                    CA201102.Text = "Microsoft Corporation Third Party Marketplace Root";
-                                }
-                                if (sb1.Contains("Windows UEFI CA 2023") && sb1.Contains("Microsoft Root Certificate Authority 2010"))
-                                {
-                                    CA2023.Text = "Windows UEFI CA 2023";
-                                    CA20102.Text = "Microsoft Root Certificate Authority 2010";
-                                }
-
-
+                            }
+                            string sb1 = sb.ToString();
+                            if (sb1.Contains("Microsoft Windows Production PCA 2011") && sb1.Contains("Microsoft Root Certificate Authority 2010"))
+                            {
+                                DB_Value_Holder.Items.Add("Microsoft Windows Production PCA 2011");
+                                CA_Holders.Items.Add("Microsoft Root Certificate Authority 2010");
+                            }
+                            if (sb1.Contains("Microsoft Corporation UEFI CA 2011") && sb1.Contains("Microsoft Corporation Third Party Marketplace Root"))
+                            {
+                                DB_Value_Holder.Items.Add("Microsoft Corporation UEFI CA 2011");
+                                CA_Holders.Items.Add("Microsoft Corporation Third Party Marketplace Root");
+                            }
+                            if (sb1.Contains("Windows UEFI CA 2023") && sb1.Contains("Microsoft Root Certificate Authority 2010"))
+                            {
+                                DB_Value_Holder.Items.Add("Windows UEFI CA 2023");
+                                CA_Holders.Items.Add("Microsoft Root Certificate Authority 2010");
                             }
 
+
                         }
+
                     }
                 }
                 catch (Exception ex)
@@ -73,5 +72,7 @@ namespace WindowsMicrosoftHashingDB
                 }
             }
         }
+
+        
     }
 }
